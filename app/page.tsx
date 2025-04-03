@@ -2,6 +2,7 @@ import CarList from '@/components/CarList'
 import Navigation from '@/components/Navigation'
 import { FaCar, FaCalendarAlt, FaSearch, FaStar, FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 import { ChevronDownIcon, CheckCircleIcon, ClockIcon, ShieldCheckIcon, CurrencyDollarIcon, SparklesIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -17,9 +18,11 @@ export default function Home() {
           
           {/* Visual Element */}
           <div className="absolute right-0 top-0 h-full w-1/3 md:w-1/2 opacity-90">
-            <img 
+            <Image 
               src="/hero-illustration.png" 
               alt="Biludlejning i Aarhus" 
+              width={500} 
+              height={300}
               className="h-full w-full object-cover object-left"
             />
           </div>
@@ -259,7 +262,7 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
-                    <p className="text-gray-600 text-lg italic">"{review.text}"</p>
+                    <p className="text-gray-600 text-lg italic">&ldquo;{review.text}&rdquo;</p>
                   </div>
                 </div>
               ))}

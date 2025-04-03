@@ -5,6 +5,7 @@ import { FaGasPump, FaCogs, FaUsers, FaCalendarAlt, FaSearch, FaCheck } from 're
 import { ArrowRightIcon } from '@heroicons/react/24/outline'
 import { supabase } from '@/lib/supabaseClient'
 import { Car } from '@/types/car'
+import Image from 'next/image'
 
 interface Filters {
   transmission: string
@@ -141,9 +142,11 @@ export default function CarList() {
           >
             {/* Car Image */}
             <div className="relative h-48">
-              <img 
+              <Image 
                 src={car.main_image_url} 
                 alt={`${car.brand} ${car.model}`}
+                width={500}
+                height={300}
                 className="w-full h-full object-cover"
               />
               {car.is_available ? (
