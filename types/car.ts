@@ -1,5 +1,5 @@
 export interface Car {
-  id: number
+  id: string
   brand: string
   model: string
   year: number
@@ -10,8 +10,6 @@ export interface Car {
   price_per_day: number
   price_per_month: number
   short_description?: string
-  description?: string
-  features?: Record<string, any>
   main_image_url: string
   is_available: boolean
   is_active: boolean

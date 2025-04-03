@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 interface AdminCarListProps {
   cars: Car[];
-  onDelete: (id: string) => void;
   onEdit: (car: Car) => void;
+  onDelete: (id: string) => void;
 }
 
-export default function AdminCarList({ cars, onDelete, onEdit }: AdminCarListProps) {
+export default function AdminCarList({ cars, onEdit, onDelete }: AdminCarListProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {cars.map((car) => (
