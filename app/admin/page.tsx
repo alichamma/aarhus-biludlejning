@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { createBrowserClient } from '@supabase/ssr';
 import { Car } from '@/types/car';
 import AdminCarList from '@/components/AdminCarList';
@@ -16,11 +16,7 @@ export default function AdminPage() {
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
   );
 
-  useEffect(() => {
-    fetchCars();
-  }, []);
-
-  const fetchCars = async () => {
+  const fetchCars = useCallback(async () => {
     const { data, error } = await supabase
       .from('cars')
       .select('*')
@@ -32,7 +28,11 @@ export default function AdminPage() {
     }
 
     setCars(data || []);
-  };
+  }, [supabase]);
+
+  useEffect(() => {
+    fetchCars();
+  }, [fetchCars]);
 
   const handleDelete = async (id: string) => {
     const { error } = await supabase
@@ -87,4 +87,4 @@ export default function AdminPage() {
       />
     </div>
   );
-} s
+}

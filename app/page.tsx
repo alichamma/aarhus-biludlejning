@@ -1,6 +1,6 @@
 import CarList from '@/components/CarList'
 import Navigation from '@/components/Navigation'
-import { FaCar, FaCalendarAlt, FaSearch, FaCheck, FaStar, FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaCar, FaCalendarAlt, FaSearch, FaStar, FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 import { ChevronDownIcon, CheckCircleIcon, ClockIcon, ShieldCheckIcon, CurrencyDollarIcon, SparklesIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
 
 export default function Home() {

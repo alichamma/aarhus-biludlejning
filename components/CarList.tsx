@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { FaCar, FaGasPump, FaCogs, FaUsers, FaCalendarAlt, FaSearch, FaCheck } from 'react-icons/fa'
+import { FaGasPump, FaCogs, FaUsers, FaCalendarAlt, FaSearch, FaCheck } from 'react-icons/fa'
 import { ArrowRightIcon } from '@heroicons/react/24/outline'
 import { supabase } from '@/lib/supabaseClient'
 import { Car } from '@/types/car'
