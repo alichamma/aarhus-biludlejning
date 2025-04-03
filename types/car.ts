@@ -11,6 +11,7 @@ export interface Car {
   price_per_month: number
   short_description?: string
   description?: string
+  features?: Record<string, any>
   main_image_url: string
   is_available: boolean
   is_active: boolean
