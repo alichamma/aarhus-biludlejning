@@ -3,8 +3,8 @@
   publish = ".next"
 
 [build.environment]
-  NEXT_PUBLIC_SUPABASE_URL = "https://your-supabase-url.supabase.co"
-  NEXT_PUBLIC_SUPABASE_ANON_KEY = "your-supabase-anon-key"
+  NEXT_PUBLIC_SUPABASE_URL = "https://cyiyugfuetbotqouuufz.supabase.co"
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN5aXl1Z2Z1ZXRib3Rxb3V1dWZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM2ODUxNzAsImV4cCI6MjA1OTI2MTE3MH0.DQD5t44ilx3alYWmJNN_V1I_9ztLURTXiaYMBEbq-K4"
 
 [[redirects]]
   from = "/*"
