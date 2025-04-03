@@ -1,5 +1,4 @@
 [build]
-  base = "aarhus-biludlejning"
   command = "npm run build"
   publish = ".next"
 
