@@ -24,6 +24,10 @@ export default function CarList() {
     search: ''
   })
 
+  const handleCall = () => {
+    window.location.href = 'tel:91825995'
+  }
+
   useEffect(() => {
     async function fetchCars() {
       try {
@@ -76,13 +80,13 @@ export default function CarList() {
       {/* Filter Header */}
       <div className="mb-12 text-center">
         <div className="inline-block">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] bg-clip-text text-transparent">
-            Vores biludvalg
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#1C1C1E]">
+            Få din bil på abonnement – kør fra <span className="bg-gradient-to-r from-[#00E6A0] to-[#00c78a] bg-clip-text text-transparent">kun 2.490 kr./md</span>
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] mx-auto rounded-full"></div>
         </div>
-        <p className="text-gray-600 max-w-2xl mx-auto mt-6 text-lg">
-          Find den bil der passer til dine behov. Vi tilbyder et bredt udvalg af biler til både korte og lange udlejningsperioder.
+        <p className="text-gray-700 max-w-3xl mx-auto mt-6 text-lg md:text-xl font-medium">
+          Alle biler er klar til dig – forsikring, 100 km/dag og service er inkluderet. Du vælger bilen, vi klarer resten.
         </p>
       </div>
 
@@ -150,9 +154,16 @@ export default function CarList() {
                 className="w-full h-full object-cover"
               />
               {car.is_available ? (
-                <span className="absolute top-4 right-4 bg-[#00E69D] text-white px-3 py-1 rounded-full text-sm">
-                  Ledig nu
-                </span>
+                <div className="absolute top-4 right-4 flex flex-col items-end gap-2">
+                  <span className="bg-[#00E69D] text-white px-3 py-1 rounded-full text-sm flex items-center gap-1">
+                    🚗 Ledig nu – klar til afhentning
+                  </span>
+                  {car.quantity && car.quantity < 3 && (
+                    <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm">
+                      Kun {car.quantity} tilbage
+                    </span>
+                  )}
+                </div>
               ) : (
                 <span className="absolute top-4 right-4 bg-gray-500 text-white px-3 py-1 rounded-full text-sm">
                   Optaget
@@ -170,11 +181,11 @@ export default function CarList() {
                   <p className="text-gray-600">{car.year}</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-lg font-bold text-[#00E69D]">
-                    {car.price_per_day} kr/dag
+                  <p className="text-2xl font-bold text-[#00E69D]">
+                    {car.price_per_month} kr./md
                   </p>
-                  <p className="text-sm text-gray-600">
-                    {car.price_per_month} kr/måned
+                  <p className="text-sm text-gray-500">
+                    ≈ {Math.round(Number(car.price_per_month) / 30)} kr./dag
                   </p>
                 </div>
               </div>
@@ -217,16 +228,17 @@ export default function CarList() {
                 </span>
                 <span className="bg-[#00E69D]/10 text-[#00E69D] px-3 py-1 rounded-full text-sm flex items-center gap-1">
                   <FaCheck className="text-xs" />
-                  Professionelt rengjort
+                  100 km/dag
                 </span>
               </div>
 
               {/* CTA Button */}
               <button 
+                onClick={handleCall}
                 className="w-full bg-[#00E69D] text-white py-3 rounded-lg font-semibold hover:bg-[#00D9C6] transition-colors duration-300 flex items-center justify-center gap-2"
                 disabled={!car.is_available}
               >
-                Book denne bil
+                Start mit abonnement
                 <ArrowRightIcon className="w-5 h-5" />
               </button>
             </div>
