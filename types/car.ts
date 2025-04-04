@@ -14,4 +14,5 @@ export interface Car {
   is_available: boolean
   is_active: boolean
   created_at: string
+  quantity?: number
 } 
