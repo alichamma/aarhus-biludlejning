@@ -299,7 +299,7 @@ export default function Home() {
                     <div className="w-12 h-12 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] rounded-full flex items-center justify-center mr-4">
                       <FaPhone className="text-white text-xl" />
                     </div>
-                    <p className="text-[#1C1C1E] text-lg">91 82 59 95</p>
+                    <p className="text-[#1C1C1E] text-lg whitespace-nowrap font-bold">91 82 59 95</p>
                   </div>
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] rounded-full flex items-center justify-center mr-4">
