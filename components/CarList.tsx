@@ -81,9 +81,9 @@ export default function CarList() {
       <div className="mb-12 text-center">
         <div className="inline-block">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#1C1C1E]">
-            Få din bil på abonnement – kør fra <span className="bg-gradient-to-r from-[#00E6A0] to-[#00c78a] bg-clip-text text-transparent">kun 2.490 kr./md</span>
+            Få din bil på abonnement – kør fra <span className="bg-gradient-to-r from-[#111973] to-[#0d1459] bg-clip-text text-transparent">kun 2.490 kr./md</span>
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] mx-auto rounded-full"></div>
+          <div className="h-1 w-24 bg-gradient-to-r from-[#111973] to-[#0d1459] mx-auto rounded-full"></div>
         </div>
         <p className="text-gray-700 max-w-3xl mx-auto mt-6 text-lg md:text-xl font-medium">
           Alle biler er klar til dig – forsikring, 100 km/dag og service er inkluderet. Du vælger bilen, vi klarer resten.

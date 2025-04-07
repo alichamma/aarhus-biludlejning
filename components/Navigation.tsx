@@ -25,8 +25,8 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <FaCar className="text-3xl text-[#00E6A0]" />
-            <span className="text-2xl font-bold text-[#00E6A0]">
+            <FaCar className="text-3xl text-[#111973]" />
+            <span className="text-2xl font-bold text-[#111973]">
               Aarhus Biludlejning
             </span>
           </div>
@@ -35,32 +35,32 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('biler')}
-              className="text-[#1C1C1E] hover:text-[#00E6A0] transition-colors font-medium"
+              className="text-[#1C1C1E] hover:text-[#111973] transition-colors font-medium"
             >
               Se biler
             </button>
             <button 
               onClick={() => scrollToSection('fordele')}
-              className="text-[#1C1C1E] hover:text-[#00E6A0] transition-colors font-medium"
+              className="text-[#1C1C1E] hover:text-[#111973] transition-colors font-medium"
             >
               Fordele
             </button>
             <button 
               onClick={() => scrollToSection('faq')}
-              className="text-[#1C1C1E] hover:text-[#00E6A0] transition-colors font-medium"
+              className="text-[#1C1C1E] hover:text-[#111973] transition-colors font-medium"
             >
               FAQ
             </button>
             <button 
               onClick={() => scrollToSection('kontakt')}
-              className="text-[#1C1C1E] hover:text-[#00E6A0] transition-colors font-medium"
+              className="text-[#1C1C1E] hover:text-[#111973] transition-colors font-medium"
             >
               Kontakt
             </button>
             <div className="w-px h-6 bg-gray-200 mx-4"></div>
             <button 
               onClick={handleCall}
-              className="text-[#1C1C1E] hover:text-[#00E6A0] transition-colors font-medium flex items-center space-x-2"
+              className="text-[#1C1C1E] hover:text-[#111973] transition-colors font-medium flex items-center space-x-2"
             >
               <span className="text-lg font-semibold tracking-wide">91 82 59 95</span>
               <span className="text-sm text-gray-500">Ring til os</span>
@@ -71,12 +71,12 @@ export default function Navigation() {
           <div className="md:hidden flex items-center space-x-4">
             <button 
               onClick={handleCall}
-              className="bg-[#00E6A0] text-white px-4 py-1.5 rounded-lg hover:bg-[#00c78a] transition-colors shadow-md hover:shadow-lg font-medium flex items-center space-x-2"
+              className="bg-[#111973] text-white px-4 py-1.5 rounded-lg hover:bg-[#00c78a] transition-colors shadow-md hover:shadow-lg font-medium flex items-center space-x-2"
             >
               <span className="text-sm">91 82 59 95</span>
             </button>
             <button 
-              className="text-[#1C1C1E] hover:text-[#00E6A0] transition-colors"
+              className="text-[#1C1C1E] hover:text-[#111973] transition-colors"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <Bars3Icon className="w-6 h-6" />
@@ -89,25 +89,25 @@ export default function Navigation() {
           <div className="px-4 py-4 space-y-4">
             <button 
               onClick={() => scrollToSection('biler')}
-              className="block w-full text-left text-[#1C1C1E] hover:text-[#00E6A0] transition-colors font-medium"
+              className="block w-full text-left text-[#1C1C1E] hover:text-[#111973] transition-colors font-medium"
             >
               Se biler
             </button>
             <button 
               onClick={() => scrollToSection('fordele')}
-              className="block w-full text-left text-[#1C1C1E] hover:text-[#00E6A0] transition-colors font-medium"
+              className="block w-full text-left text-[#1C1C1E] hover:text-[#111973] transition-colors font-medium"
             >
               Fordele
             </button>
             <button 
               onClick={() => scrollToSection('faq')}
-              className="block w-full text-left text-[#1C1C1E] hover:text-[#00E6A0] transition-colors font-medium"
+              className="block w-full text-left text-[#1C1C1E] hover:text-[#111973] transition-colors font-medium"
             >
               FAQ
             </button>
             <button 
               onClick={() => scrollToSection('kontakt')}
-              className="block w-full text-left text-[#1C1C1E] hover:text-[#00E6A0] transition-colors font-medium"
+              className="block w-full text-left text-[#1C1C1E] hover:text-[#111973] transition-colors font-medium"
             >
               Kontakt
             </button>

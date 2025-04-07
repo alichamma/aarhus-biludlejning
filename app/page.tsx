@@ -214,10 +214,10 @@ export default function Home() {
         <section id="faq" className="py-20 bg-gradient-to-b from-white via-blue-50 to-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#111973] to-[#0d1459] bg-clip-text text-transparent">
                 Ofte stillede spørgsmål
               </h2>
-              <div className="h-1 w-24 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] mx-auto rounded-full mb-6"></div>
+              <div className="h-1 w-24 bg-gradient-to-r from-[#111973] to-[#0d1459] mx-auto rounded-full mb-6"></div>
               <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                 Find svar på de mest almindelige spørgsmål om biludlejning
               </p>
@@ -276,10 +276,10 @@ export default function Home() {
         <section id="kontakt" className="py-20 bg-gradient-to-b from-white via-indigo-50 to-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#111973] to-[#0d1459] bg-clip-text text-transparent">
                 Kontakt os
               </h2>
-              <div className="h-1 w-24 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] mx-auto rounded-full mb-6"></div>
+              <div className="h-1 w-24 bg-gradient-to-r from-[#111973] to-[#0d1459] mx-auto rounded-full mb-6"></div>
               <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                 Vi er altid klar til at hjælpe dig med din biludlejning
               </p>
@@ -290,26 +290,26 @@ export default function Home() {
                 <div className="absolute -inset-1 bg-gray-100 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
                 <div className="relative bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] rounded-full flex items-center justify-center mr-4">
-                      <FaMapMarkerAlt className="text-white text-xl" />
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#111973] to-[#0d1459] rounded-full flex items-center justify-center mr-4">
+                      <FaMapMarkerAlt className="text-[#111973]" />
                     </div>
                     <p className="text-[#1C1C1E] text-lg">Randersvej 80, 8200 Aarhus</p>
                   </div>
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] rounded-full flex items-center justify-center mr-4">
-                      <FaPhone className="text-white text-xl" />
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#111973] to-[#0d1459] rounded-full flex items-center justify-center mr-4">
+                      <FaPhone className="text-[#111973]" />
                     </div>
                     <p className="text-[#1C1C1E] text-lg whitespace-nowrap font-bold">91 82 59 95</p>
                   </div>
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] rounded-full flex items-center justify-center mr-4">
-                      <FaEnvelope className="text-white text-xl" />
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#111973] to-[#0d1459] rounded-full flex items-center justify-center mr-4">
+                      <FaEnvelope className="text-[#111973]" />
                     </div>
                     <p className="text-[#1C1C1E] text-lg">kontakt@aabiludlejning.dk</p>
                   </div>
                   <div className="flex items-center">
-                    <div className="w-12 h-12 bg-gradient-to-r from-[#00E6A0] to-[#00c78a] rounded-full flex items-center justify-center mr-4">
-                      <FaBuilding className="text-white text-xl" />
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#111973] to-[#0d1459] rounded-full flex items-center justify-center mr-4">
+                      <FaBuilding className="text-[#111973]" />
                     </div>
                     <p className="text-[#1C1C1E] text-lg">CVR: 45216149</p>
                   </div>
@@ -343,18 +343,18 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
               {/* Company Info */}
               <div className="space-y-6">
-                <h3 className="text-3xl font-bold bg-gradient-to-r from-[#00E6A0] to-[#00c78a] bg-clip-text text-transparent">
+                <h3 className="text-3xl font-bold bg-gradient-to-r from-[#111973] to-[#0d1459] bg-clip-text text-transparent">
                   Aarhus Biludlejning
                 </h3>
                 <p className="text-gray-400 max-w-md">
                   Din pålidelige biludlejning i Aarhus. Vi tilbyder fleksible løsninger til både private og erhvervskunder.
                 </p>
                 <div className="flex items-center space-x-4">
-                  <FaBuilding className="text-[#00E6A0]" />
+                  <FaBuilding className="text-[#111973]" />
                   <span className="text-gray-400">CVR: 45216149</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <FaPhone className="text-[#00E6A0]" />
+                  <FaPhone className="text-[#111973]" />
                   <span className="text-gray-400">91 82 59 95</span>
                 </div>
               </div>
@@ -364,20 +364,20 @@ export default function Home() {
                 <h4 className="text-xl font-semibold text-white">Hurtige Links</h4>
                 <ul className="space-y-4">
                   <li>
-                    <a href="#biler" className="text-gray-400 hover:text-[#00E6A0] transition-colors duration-300 flex items-center gap-2 group">
-                      <span className="w-2 h-2 bg-[#00E6A0] rounded-full group-hover:scale-150 transition-transform duration-300"></span>
+                    <a href="#biler" className="text-gray-400 hover:text-[#111973] transition-colors duration-300 flex items-center gap-2 group">
+                      <span className="w-2 h-2 bg-[#111973] rounded-full group-hover:scale-150 transition-transform duration-300"></span>
                       Vores Biler
                     </a>
                   </li>
                   <li>
-                    <a href="#fordele" className="text-gray-400 hover:text-[#00E6A0] transition-colors duration-300 flex items-center gap-2 group">
-                      <span className="w-2 h-2 bg-[#00E6A0] rounded-full group-hover:scale-150 transition-transform duration-300"></span>
+                    <a href="#fordele" className="text-gray-400 hover:text-[#111973] transition-colors duration-300 flex items-center gap-2 group">
+                      <span className="w-2 h-2 bg-[#111973] rounded-full group-hover:scale-150 transition-transform duration-300"></span>
                       Fordele
                     </a>
                   </li>
                   <li>
-                    <a href="#faq" className="text-gray-400 hover:text-[#00E6A0] transition-colors duration-300 flex items-center gap-2 group">
-                      <span className="w-2 h-2 bg-[#00E6A0] rounded-full group-hover:scale-150 transition-transform duration-300"></span>
+                    <a href="#faq" className="text-gray-400 hover:text-[#111973] transition-colors duration-300 flex items-center gap-2 group">
+                      <span className="w-2 h-2 bg-[#111973] rounded-full group-hover:scale-150 transition-transform duration-300"></span>
                       FAQ
                     </a>
                   </li>
@@ -389,15 +389,15 @@ export default function Home() {
                 <h4 className="text-xl font-semibold text-white">Kontakt</h4>
                 <ul className="space-y-4">
                   <li className="flex items-center space-x-3">
-                    <FaMapMarkerAlt className="text-[#00E6A0]" />
+                    <FaMapMarkerAlt className="text-[#111973]" />
                     <span className="text-gray-400">Randersvej 80, 8200 Aarhus</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <FaPhone className="text-[#00E6A0]" />
+                    <FaPhone className="text-[#111973]" />
                     <span className="text-gray-400">91 82 59 95</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <FaEnvelope className="text-[#00E6A0]" />
+                    <FaEnvelope className="text-[#111973]" />
                     <span className="text-gray-400">kontakt@aabiludlejning.dk</span>
                   </li>
                 </ul>
@@ -407,13 +407,13 @@ export default function Home() {
               <div className="space-y-6">
                 <h4 className="text-xl font-semibold text-white">Følg Os</h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-br from-[#00E6A0] to-[#00c78a] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 hover:rotate-12">
+                  <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-br from-[#111973] to-[#0d1459] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 hover:rotate-12">
                     <FaFacebook className="text-xl" />
                   </a>
-                  <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-br from-[#00E6A0] to-[#00c78a] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 hover:-rotate-12">
+                  <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-br from-[#111973] to-[#0d1459] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 hover:-rotate-12">
                     <FaInstagram className="text-xl" />
                   </a>
-                  <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-br from-[#00E6A0] to-[#00c78a] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 hover:rotate-12">
+                  <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-br from-[#111973] to-[#0d1459] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 hover:rotate-12">
                     <FaTwitter className="text-xl" />
                   </a>
                 </div>
