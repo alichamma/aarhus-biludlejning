@@ -11,7 +11,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative h-[800px] md:h-[600px] overflow-hidden bg-gradient-to-br from-[#00E69D] to-[#00D9C6]">
+    <div className="relative h-[800px] md:h-[600px] overflow-hidden bg-gradient-to-br from-[#111973] to-[#0d1459]">
       <div className="absolute inset-0 opacity-30">
         <Image
           src="/hero-bg.jpg"
@@ -32,7 +32,7 @@ export default function Hero() {
           </p>
           <button 
             onClick={scrollToCars}
-            className="bg-white text-[#00E69D] px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 mb-8"
+            className="bg-white text-[#111973] px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 mb-8"
           >
             🚗 Kom i gang – vælg bil og kør i dag!
           </button>
