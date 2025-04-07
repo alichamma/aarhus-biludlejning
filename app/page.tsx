@@ -27,13 +27,13 @@ export default function Home() {
         <HowItWorks />
 
         {/* Benefits Section */}
-        <section id="fordele" className="py-20 bg-gradient-to-b from-white via-emerald-50 to-white">
+        <section id="fordele" className="py-20 bg-gradient-to-b from-white via-[#111973]/5 to-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-emerald-900">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#111973]">
                 Frihed og tryghed i hver kilometer
               </h2>
-              <div className="h-1 w-24 bg-emerald-500 mx-auto rounded-full mb-6"></div>
+              <div className="h-1 w-24 bg-[#111973] mx-auto rounded-full mb-6"></div>
               <p className="text-gray-600 max-w-2xl mx-auto text-lg">
                 Din bil, din frihed – uden bekymringer
               </p>
@@ -73,12 +73,12 @@ export default function Home() {
                 }
               ].map((benefit, index) => (
                 <div key={index} className="relative group">
-                  <div className="absolute -inset-1 bg-emerald-50 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
-                  <div className="relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-emerald-100 group-hover:scale-[1.03]">
-                    <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse">
+                  <div className="absolute -inset-1 bg-[#111973]/5 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                  <div className="relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-[#111973]/10 group-hover:scale-[1.03]">
+                    <div className="w-16 h-16 bg-[#111973] rounded-full flex items-center justify-center mb-6 mx-auto group-hover:animate-pulse">
                       {benefit.icon}
                     </div>
-                    <h3 className="text-xl font-bold text-emerald-900 mb-4 text-center group-hover:text-emerald-700 transition-colors duration-300">{benefit.title}</h3>
+                    <h3 className="text-xl font-bold text-[#111973] mb-4 text-center group-hover:text-[#111973] transition-colors duration-300">{benefit.title}</h3>
                     <p className="text-gray-600 text-center group-hover:text-gray-800 transition-colors duration-300">{benefit.text}</p>
                   </div>
                 </div>
